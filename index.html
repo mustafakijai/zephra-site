@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zephra — Your private AI copilot for Mac</title>
+  <meta name="description" content="Zephra is a privacy-first voice and work copilot for Mac. Say “Hey Zephra”, control Apple Music, launch your design apps and run reviewed work plans — with on-device speech and no cloud backend.">
+  <meta name="theme-color" content="#07080f">
+  <meta property="og:title" content="Zephra — Your private AI copilot for Mac">
+  <meta property="og:description" content="On-device voice + reviewed work automation for Mac creators and freelancers.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Zephra home">
+      <img src="assets/logo.svg" alt="" width="30" height="30"><span>Zephra</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-sm btn-primary" href="#waitlist">Join the beta</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="pill"><span class="dot"></span> Private beta · macOS 13+</p>
+        <h1>Your private <span class="grad">AI copilot</span> for Mac.</h1>
+        <p class="lead">Say <strong>“Hey Zephra.”</strong> Control your music, open your design apps and turn plain-language tasks into step-by-step plans you approve — with speech recognised <em>on your Mac</em>, not in someone else’s cloud.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#waitlist">Get early access</a>
+          <a class="btn btn-ghost" href="#how">See how it works →</a>
+        </div>
+        <ul class="trust">
+          <li>On-device speech</li><li>No account or telemetry</li><li>Nothing runs without approval</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <img class="orb" src="assets/hero-orb.jpg" alt="">
+        <div class="window glass">
+          <div class="win-bar"><i></i><i></i><i></i><span>Zephra</span></div>
+          <div class="win-body">
+            <div class="wake"><span class="mic"></span><span class="mono">MIC ON · waiting for “Hey Zephra”</span></div>
+            <div class="bubble you" data-type="Hey Zephra… next song"></div>
+            <div class="bubble zep">Skipped. Now playing the next track in Music.</div>
+            <div class="plan">
+              <div class="plan-h"><span>Work plan</span><span class="tag">Awaiting approval</span></div>
+              <ol>
+                <li><b>Open apps</b> InDesign, Illustrator, Safari</li>
+                <li><b>Create folder</b> Client A / checklist.md</li>
+                <li><b>Draft email</b> brochure-review.txt</li>
+              </ol>
+              <div class="plan-f"><span class="btn-mini">Approve and run on this Mac</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS / WORKS WITH -->
+    <section class="works reveal">
+      <p>Works with the apps already on your Mac</p>
+      <div class="works-row">
+        <span>Apple Music</span><span>Safari</span><span>Adobe InDesign</span><span>Adobe Illustrator</span><span>Ollama <small>(optional)</small></span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="section-head reveal">
+        <p class="eyebrow">Features</p>
+        <h2>A copilot that does real things — and tells you exactly what it did.</h2>
+        <p class="sub">No vague “AI magic”. Every capability below ships in the current beta.</p>
+      </div>
+      <div class="cards">
+        <article class="card glass reveal">
+          <div class="ico">🎙️</div>
+          <h3>“Hey Zephra” wake mode</h3>
+          <p>Opt-in hands-free mode. Zephra listens on-device for its name, plays a cue, then takes your command — even while another app is in front. Off by default, every launch.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">⚡</div>
+          <h3>Talk, pause, done</h3>
+          <p>Click the mic and speak. Zephra sends your command after a short pause — or switch on review mode to check every transcript first. English and a set of Hindi commands.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">🎵</div>
+          <h3>Apple Music, verified</h3>
+          <p>Play, pause, skip, volume, shuffle and “What’s playing?”. Search your library tracks and playlists, then say “play the second one”. Zephra checks Music’s real state before saying it worked.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">🚀</div>
+          <h3>Launch your workspace</h3>
+          <p>“Start my work setup” opens InDesign, Illustrator and Safari together. App launches are allowlisted and always confirmed — no surprises.</p>
+        </article>
+        <article class="card glass reveal wide">
+          <div class="ico">🧭</div>
+          <h3>Work mode: plans you approve</h3>
+          <p>Describe a task — “Create project for Client A”, “Draft an email about brochure review”, “Research office design” — and Zephra builds a step-by-step plan. Review every step and file, pick a folder, then <strong>Approve and run</strong>. Each run writes an execution report and never overwrites an existing file.</p>
+          <div class="chips"><span>Project folders + checklist</span><span>Local notes</span><span>Email drafts (.txt)</span><span>Research worksheets</span><span>Execution reports</span></div>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">📄</div>
+          <h3>One-word InDesign PDF</h3>
+          <p>“Export InDesign PDF” checks for overset text and missing links, lets you pick a preset, and exports the active document to a fresh file.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">🧠</div>
+          <h3>Bring your own local AI</h3>
+          <p>Optionally connect your own Ollama model on this Mac for longer, combined requests. It can only propose the approved actions — never shell commands or scripts.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="ico">🛑</div>
+          <h3>Emergency stop</h3>
+          <p>One click stops new commands and shuts down wake listening. Errors, sleep and screen lock switch the microphone off automatically.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From voice to done in three steps.</h2>
+      </div>
+      <div class="steps">
+        <div class="step glass reveal"><span class="num">01</span><h3>Say it or type it</h3><p>“Hey Zephra” → cue → “Create project for Client A.” Or just type into the command bar.</p></div>
+        <div class="step glass reveal"><span class="num">02</span><h3>Review the plan</h3><p>Zephra shows each step, the apps it will open and the exact files it will write. Change your mind? Cancel.</p></div>
+        <div class="step glass reveal"><span class="num">03</span><h3>Approve and run</h3><p>It runs on your Mac and reports every step’s outcome and file location. Nothing is sent anywhere.</p></div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="section privacy" id="privacy">
+      <div class="privacy-grid">
+        <div class="reveal">
+          <p class="eyebrow">Privacy by design</p>
+          <h2>Your voice never leaves your Mac.</h2>
+          <p class="sub">Zephra was built the other way round from cloud assistants: local first, explicit always.</p>
+          <a class="btn btn-ghost" href="#faq">Read the privacy FAQ →</a>
+        </div>
+        <ul class="checks glass reveal">
+          <li><b>On-device speech only.</b> Apple’s on-device recogniser, with no hidden server fallback.</li>
+          <li><b>Wake audio is transient.</b> Ambient speech is checked for the wake phrase and discarded — never saved, uploaded or executed.</li>
+          <li><b>No account, no telemetry.</b> No sign-up, no analytics, no paid backend.</li>
+          <li><b>Memory that forgets.</b> Conversation history lives in memory and disappears when you quit.</li>
+          <li><b>Local AI, on your terms.</b> The optional planner talks only to a loopback Ollama server you run.</li>
+          <li><b>No open ports.</b> Zephra exposes no inbound network control.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="section-head reveal">
+        <p class="eyebrow">Launch pricing</p>
+        <h2>Simple pricing. Start free.</h2>
+        <p class="sub">Introductory prices for early supporters — subject to change at general release.</p>
+      </div>
+      <div class="pricing">
+        <div class="plan-card glass reveal">
+          <h3>Beta</h3><p class="price">$0</p><p class="per">during the private beta</p>
+          <ul><li>Voice + typed commands</li><li>“Hey Zephra” wake mode</li><li>Apple Music control</li><li>App launching</li><li>Community feedback channel</li></ul>
+          <a class="btn btn-ghost block" href="#waitlist">Join the beta</a>
+        </div>
+        <div class="plan-card glass featured reveal">
+          <span class="badge">Most popular</span>
+          <h3>Pro</h3><p class="price">$9<small>/mo</small></p><p class="per">billed monthly</p>
+          <ul><li>Everything in Beta</li><li>Work mode plans &amp; execution reports</li><li>InDesign PDF export</li><li>Local Ollama AI planner</li><li>Priority support &amp; new recipes first</li></ul>
+          <a class="btn btn-primary block" href="#waitlist">Get Pro early access</a>
+        </div>
+        <div class="plan-card glass reveal">
+          <h3>Lifetime</h3><p class="price">$79</p><p class="per">one-time · limited launch offer</p>
+          <ul><li>Everything in Pro</li><li>All 1.x updates</li><li>Founding-member badge</li><li>Vote on the roadmap</li></ul>
+          <a class="btn btn-ghost block" href="#waitlist">Reserve Lifetime</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head reveal"><p class="eyebrow">FAQ</p><h2>Questions, answered honestly.</h2></div>
+      <div class="faq">
+        <details class="glass reveal"><summary>Which Macs does Zephra run on?</summary><p>macOS 13 Ventura or later. On-device speech must be available for your language on your Mac. The optional Ollama planner needs macOS 14+.</p></details>
+        <details class="glass reveal"><summary>Does Zephra send my voice or files to the cloud?</summary><p>No. Speech is recognised on-device with no server fallback, there’s no account or telemetry, and the optional AI planner only talks to an Ollama server running on your own Mac (127.0.0.1). If you point Ollama at a cloud model yourself, that’s your server’s configuration.</p></details>
+        <details class="glass reveal"><summary>Is it always listening?</summary><p>Only if you switch on wake mode — it’s off every time you launch. While on, macOS shows its microphone indicator, and audio is processed transiently just to spot “Hey Zephra”. Lock, sleep, errors or Emergency stop turn it off.</p></details>
+        <details class="glass reveal"><summary>Can it send emails or manage my calendar?</summary><p>Not yet. Email “drafts” are local text files you can copy into your mail app, and Calendar is an app-launch target only. Inbox and calendar integrations are on the roadmap.</p></details>
+        <details class="glass reveal"><summary>Does it work with Spotify or the full Apple Music catalog?</summary><p>Today Zephra controls the Music app and searches the music in your library and playlists. Full catalog search, album queues and Spotify are planned.</p></details>
+        <details class="glass reveal"><summary>Is Zephra a general chatbot?</summary><p>No — it’s a focused command and work copilot. It understands a growing set of commands and work recipes, and with the optional local model it can plan longer combined tasks from that approved set.</p></details>
+        <details class="glass reveal"><summary>Is it safe to let an assistant run things on my Mac?</summary><p>Zephra can only use an allowlisted set of actions, shows you the full plan first, asks before launching apps, never overwrites existing files and can’t run shell commands or generated scripts.</p></details>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section class="section" id="waitlist">
+      <div class="cta glass reveal">
+        <img class="cta-orb" src="assets/hero-orb.jpg" alt="" aria-hidden="true">
+        <h2>Be first to try Zephra.</h2>
+        <p class="sub">Join the private beta and lock in launch pricing. We’ll email you when your invite is ready — no spam.</p>
+        <!-- TODO(owner): set WAITLIST_ENDPOINT in script.js (Formspree, ConvertKit, Supabase…). Until then the form opens a pre-filled email. -->
+        <form class="waitlist" id="waitlist-form" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@studio.com" autocomplete="email" required>
+          <select name="plan" aria-label="Plan interest">
+            <option value="beta">Free beta</option><option value="pro">Pro</option><option value="lifetime">Lifetime</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Request invite</button>
+        </form>
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="foot-brand"><img src="assets/logo.svg" alt="" width="24" height="24"><span>Zephra</span><small>Your private AI copilot for Mac</small></div>
+    <nav aria-label="Footer"><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+    <p class="legal">© <span id="yr">2026</span> <a href="https://nexoraaero.com" target="_blank" rel="noopener">Nexora Aero</a>. All rights reserved. Apple Music, Safari, Adobe InDesign, Adobe Illustrator and Ollama are trademarks of their respective owners; Zephra is not affiliated with them.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
