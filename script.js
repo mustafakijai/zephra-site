@@ -38,7 +38,7 @@ document.querySelectorAll(".card").forEach(card => {
 const you = document.querySelector(".bubble.you");
 const zep = document.querySelector(".bubble.zep");
 const lines = [
-  ["Hey Zephra… next song", "Skipped. Now playing the next track in Music."],
+  ["Hey Yumika… next song", "Skipped. Now playing the next track in Music."],
   ["Create project for Client A", "Plan ready: 3 steps. Review, then approve to run."],
   ["Set volume to forty percent", "Music volume is now 40 percent."],
   ["Export InDesign PDF", "Checked links and overset text. Choose a PDF preset."],
@@ -73,7 +73,7 @@ form.addEventListener("submit", async e => {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = "Please enter a valid email address."; msg.classList.add("err"); return; }
   if (WAITLIST_ENDPOINT) {
     try {
-      const res = await fetch(WAITLIST_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ email, plan, source: "zephra-site" }) });
+      const res = await fetch(WAITLIST_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ email, plan, source: "yumika-site" }) });
       if (!res.ok) throw new Error(res.status);
       msg.textContent = "You’re on the list! We’ll be in touch soon.";
       form.reset();
@@ -81,8 +81,8 @@ form.addEventListener("submit", async e => {
       msg.textContent = "Something went wrong — please try again in a moment."; msg.classList.add("err");
     }
   } else {
-    const subject = encodeURIComponent(`Zephra beta request (${plan})`);
-    const body = encodeURIComponent(`Please add me to the Zephra beta.\n\nEmail: ${email}\nInterested in: ${plan}`);
+    const subject = encodeURIComponent(`Yumika beta request (${plan})`);
+    const body = encodeURIComponent(`Please add me to the Yumika beta.\n\nEmail: ${email}\nInterested in: ${plan}`);
     window.location.href = `mailto:${WAITLIST_EMAIL}?subject=${subject}&body=${body}`;
     msg.textContent = "Opening your email app to send the request…";
   }
